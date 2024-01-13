@@ -6,7 +6,7 @@ pdfReader = PyPDF2.PdfFileReader('INPUT/Sample.pdf')
 
 pageNum = pdfReader.getNumPages()
 
-String= "Pune"
+String= "New York"
 
 for i in range(0,pageNum):
     PageObj = pdfReader.getPage(i)
