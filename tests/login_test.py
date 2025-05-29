@@ -1,27 +1,16 @@
 import time
-
 import pytest
 from selenium import webdriver
 from pages.login_page import LoginPage
+from utils.base_test import logged_in_driver
 
 
-@pytest.fixture()
-def driver():
-    driver = webdriver.Chrome()
-    driver.implicitly_wait(30)
-    yield driver
-    driver.close()
-    driver.quit()
-
-def test_login(driver):
-
+def test_login(logged_in_driver):
+    driver= logged_in_driver
     login_page =LoginPage(driver)
     login_page.open_page("https://trytestingthis.netlify.app/")
     time.sleep(1)
-    login_page.enter_username("test")
+    login_page.login("test", "test")
     time.sleep(1)
-    login_page.enter_password("test")
-    time.sleep(1)
-    login_page.click_login()
-    time.sleep(1)
+
 
