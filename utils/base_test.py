@@ -3,7 +3,7 @@ from selenium import webdriver
 from pages.login_page import LoginPage
 from utils.config import URL, USERNAME, PASSWORD
 
-@pytest.fixture(scope="function")
+@pytest.fixture()
 def logged_in_driver():
     driver = webdriver.Chrome()
     driver.maximize_window()
