@@ -24,6 +24,7 @@ This scalable automation framework is designed to support reliable and maintaina
 - 📁 **Page Object Model** structure
 - 🧪 **PyTest-based test execution and fixtures**
 - 📊 **HTML reports generation**
+- 🧾 **Logger Integration** 
 - 🔄 **Cross-browser support (Chrome, Firefox)**
 - ⚙️ **Jenkins-ready configuration for automated test runs**
 
