@@ -27,3 +27,9 @@ def test_date(logged_in_driver):
     layout2.select_date("06-11-2024")
     time.sleep(10)
 
+def test_upload(logged_in_driver):
+    driver = logged_in_driver
+    layout2 = Layout2Page(driver)
+    layout2.upload_file(file_path=r'C:\Users\pspra\PycharmProjects\Selenium-Python\Input_data\Test_Plan_Template.docx')
+    time.sleep(10)
+
